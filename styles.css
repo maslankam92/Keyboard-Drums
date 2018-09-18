@@ -1,0 +1,51 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url("bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 80%;
+  flex-wrap: wrap;
+}
+
+.sound-btn {
+  border: 2px solid #000000;
+  background-color: rgba(0, 0, 0, .4);
+  margin: 0 .2rem;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .08s;
+}
+
+.sound-btn.playing {
+  border: 3px solid #1a6eff;
+  box-shadow: 0 0 10px 2px #1a6eff;
+  transform: scale(1.2);
+}
+
+.sound-char {
+  color: #f8f8f8;
+  font-size: 4rem;
+}
+
+.sound-name {
+  color: #1a6eff;
+}
